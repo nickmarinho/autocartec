@@ -355,7 +355,7 @@
 		
 				$.ajax({
 					type: "POST",
-					url: "send_mail.php",
+					url: "../phpmailer/send_mail.php",
 					data: dataString,
 					success: function(){
 						$('.success').fadeIn(1000);
