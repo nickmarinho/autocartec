@@ -21,6 +21,7 @@
 	<meta name="twitter:card" content="" />
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link rel="icon" href="favicon.ico" sizes="16x16">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -60,7 +61,7 @@
 					<div class="col-xs-12">
 						<div class="top">
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-6" id="autocarlogo">
 									<a href="index.html"><img src="images/autocartec.jpg" alt="AUTOCAR Tecnologia Automotiva"></a>
 								</div>
 								<div class="col-md-3">
@@ -87,11 +88,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-push-6 animate-box">
-						<img class="img-responsive about-img image-shadow" src="images/idea-branco.jpg">
-						<br /><br /><br />
-						<img class="img-responsive about-img image-shadow" src="images/honda-fit-vermelho.jpg">
-				</div>
-				<div class="col-md-6 col-md-pull-6 animate-box">
 					<h2>Sobre a AUTOCAR</h2>
 					<p>
 						Somos uma oficina com 25 anos de experiência em todas as marcas e modelos de carros. Especializada em Honda, Fiat, Ford, Chevrolet, Volkswagen, etc... Traga seu carro, venha nos conhecer.
@@ -148,7 +144,12 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-md-6 col-md-pull-6 animate-box">
+					<img class="img-responsive about-img image-shadow" src="images/idea-branco.jpg">
+					<br /><br /><br />
+					<img class="img-responsive about-img image-shadow" src="images/honda-fit-vermelho.jpg">
 			</div>
+		</div>
 		</div>
 	</div>
 
@@ -168,7 +169,7 @@
 				</div>
 				<div class="col-md-6 colorlib-widget">
 					<h3>Entre em contato</h3>
-					<form class="contact-form" method="post" action="send_mail.php">
+					<form class="contact-form" method="post" action="">
 						<div class="form-group">
 							<label for="name" class="sr-only">Nome</label>
 							<input type="name" class="form-control" id="name" placeholder="Nome">
@@ -187,6 +188,7 @@
 						<div class="alert alert-success success">
 							Email enviado com sucesso!
 						</div>
+						<div class="alert alert-danger error"></div>
 					</form>
 				</div>
 			</div>
